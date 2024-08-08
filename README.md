@@ -64,8 +64,9 @@ The included workflow file (`buildkit-test.yml`) demonstrates how to use the rem
 ## Customization
 
 - You can change the BuildKit port (default: 9999) in the EC2 instance user data script and the GitHub Actions workflow file.
-- Adjust the EC2 instance type and region in `main.tf` as needed.
+- Adjust the EC2 instance type and region in main.tf as needed. If you modify the region, make sure to update it in your GitHub Actions workflow file as well (.github/workflows/build.yml).
 - Modify the IAM permissions in `main.tf` if you need additional AWS services access.
+- Update the AMI ID in main.tf if you want to use a different base image or if you're changing regions, as AMI IDs are region-specific.
 
 ## Contributing
 
