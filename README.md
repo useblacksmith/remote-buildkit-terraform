@@ -9,7 +9,7 @@ The main components of this setup are:
 1. `main.tf`: Terraform script to create an EC2 instance with BuildKit installed.
 2. `terraform.tfvars`: Variables file for Terraform (you need to populate this).
 3. `Dockerfile`: A sample Dockerfile for testing.
-4. `.github/workflows/build.yml`: Example GitHub Actions workflow to use the remote BuildKit instance.
+4. `buildkit-test.yml`: Example GitHub Actions workflow to use the remote BuildKit instance.
 
 ## Quick Start
 
