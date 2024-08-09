@@ -21,12 +21,7 @@ The main components of this setup are:
    github_org = "your-org-name"
    github_repo = "your-repo-name"
    ```
-
-4. Set the following environment variables:
-   - `BUILDKIT_HOST`: The public IP address of your EC2 instance (you'll get this after applying Terraform).
-   - `AWS_ACCOUNT_ID`: Your AWS account ID.
-
-5. Run Terraform:
+4. Run Terraform:
 
    ```
    terraform init
@@ -34,7 +29,11 @@ The main components of this setup are:
    terraform apply
    ```
 
-6. After `terraform apply` is successful, you'll get the public IP of your BuildKit instance. Use this to set the `BUILDKIT_HOST` environment variable.
+5. After `terraform apply` is successful, you'll get the public IP of your BuildKit instance. Use this to set the `BUILDKIT_HOST` environment variable.
+
+6. Set the following environment secrets variables in your GitHub repo:
+   - `BUILDKIT_HOST`: The public IP address of your EC2 instance (you'll get this after applying Terraform).
+   - `AWS_ACCOUNT_ID`: Your AWS account ID.
 
 ## Terraform Configuration Details
 
