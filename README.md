@@ -58,7 +58,7 @@ The included workflow file (`buildkit-test.yml`) demonstrates how to use the rem
 
 ## Important Security Note
 
-⚠️ **Warning**: The current setup does not exclusively whitelist GitHub Actions runners' IPs. For production use, it's strongly recommended to restrict the security group ingress rules to only allow traffic from [GitHub Actions IP ranges](https://api.github.com/meta)
+⚠️ **Warning**: The current setup does not exclusively whitelist GitHub Actions runners' IPs. For production use, it's strongly recommended to restrict the security group ingress rules to only allow traffic from [GitHub Actions IP ranges](https://api.github.com/meta) and trusted sources.
 
 ## Customization
 
