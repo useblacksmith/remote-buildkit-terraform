@@ -1,5 +1,7 @@
 # Remote BuildKit Instance for Docker Builds
 
+[Read more on our blog](https://www.blacksmith.sh/blog/faster-docker-builds-using-a-remote-buildkit-instance).
+
 This repository contains Terraform scripts and GitHub Actions workflow to set up and use a remote BuildKit instance for running Docker builds.
 
 ## Overview
